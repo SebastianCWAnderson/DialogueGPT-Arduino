@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">DialogueGPT</string>
+    <string name="speech2text">Speech2Text</string>
+    <string name="chatgpt">ChatGPT</string>
+    <string name="mode">Mode</string>
+    <string name="Lightswitch">Light Switch</string>
+    <string name="settings">Settings</string>
+    <string name="speech_to_text_result_will_be_shown_here">Speech to Text resulting output will be printed here</string>
+    <string name="submit">Submit</string>
+    <string name="close_menu">Close Menu</string>
+    <string name="enter_your_openai_api_key_below">Enter your OpenAI API Key below:</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="app_theme">App Theme:</string>
+    <string name="openai_logo">OpenAI logo</string>
+    <string name="type_here">Type here...</string>
+
+
+    <string-array name="lightModes">
+        <item>System default</item>
+        <item>Light</item>
+        <item>Dark</item>
+        <item>MQTT</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.group17.dialoguegpt'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.group17.dialoguegpt"
+        minSdk 30
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5'
+    //implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+    // Old Eclipse Paho does not work with Android 11+
+    // Legacy support fix source :https://stackoverflow.com/questions/71155187/android-paho-mqtt-crashes-android-12-targeting-s-version-31-and-above-requi
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    // Jar file source to replace Paho MQTT Client: https://github.com/hannesa2/paho.mqtt.android/releases/tag/3.3.0
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+
+    // PendingIntent fix for Android 11+
+    // Source: https://stackoverflow.com/questions/68473542/mediasessioncompattargeting-s-version-31-and-above-requires-that-one-of-flag
+    implementation 'androidx.work:work-runtime:2.8.1'
+
+    // Fix a crash related to Timber (I wouldn't know what it does but it's a dependency)
+    // Source: https://github.com/mapbox/mapbox-gl-native/issues/13844
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:7.1.0'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+
+    implementation 'androidx.preference:preference:1.2.0'
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
