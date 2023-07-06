@@ -1,4 +1,4 @@
-# DialogueGPT
+# DialogueGPT (Arduino Version)
 
 ## Project Description
 
