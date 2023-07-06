@@ -101,4 +101,7 @@ As an AI language model, GPT learns from vast amounts of text data from the inte
 For instance, if a LLM is **only** trained on text and literature written by an author who has a very strong political bias; it is probable that the LLM will reflect that bias in its outputs.
 
 OpenAI, the company behind the GPT LLM used in this project, acknowledges the presence of biases and is actively working to mitigate them. They have made efforts to reduce both glaring and subtle biases in the system and have made ongoing research and development a priority in addressing this issue since it presents potentially harmful or negative outcomes if the models are used widespread.
+
 ---
+
+If you have any questions regarding this project, feel free to message me here on GitHub @SebastianCWAnderson
