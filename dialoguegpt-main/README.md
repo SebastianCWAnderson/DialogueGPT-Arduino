@@ -1,13 +1,8 @@
-# DialogueGPT - DIT113 Group 17
+# DialogueGPT
 
 ## Project Description
 
-### A YouTube video demonstration of the project can be viewed [here](https://youtu.be/lE0KWMznvbc).
-
 DialogueGPT is a project that fuses together multiple different hardware and software components into one cohesive product. It uses OpenAI' GPT (_Generative Pre-Trained Transformer_) LLM (large language model) to create a 'dialogue' between the user and the LLM.
-
-A component diagram of DialogueGPT can be viewed [here](https://imgur.com/a/dP2NInz).
-
 
 
 ### Purpose and Benefits
@@ -83,39 +78,6 @@ In case you get an error while trying to run the command, run `services.msc`, fi
 
 ---
 
-### Team Member Contributions: 
-
-#### Bora Kocak [@bora](https://git.chalmers.se/bora):
-
-- Android app UI 
-- Light/Dark mode implementation
-- Wio unit testing
-- Documentation
-
-#### Joey Karlsson [@joeyk](https://git.chalmers.se/joeyk):
-
-- MQTT connection for Wio and Android
-- Wio sensors connectivity and testing
-- Music functionality
-- Prompt engineering
-
-#### Danila Baryshev [@baryshev](https://git.chalmers.se/baryshev):
-
-- ChatGPT API connection
-- App UI
-- Wio sensors connectivity
-- Music functionality
-- Documentation
-
-#### Sebastian Anderson [@seander](https://git.chalmers.se/seander):
-
-- Documentation
-- Settings menu
-- Hardware component assembly
-- (Scrapped) Audio recording functionality
-
----
-
 ### Glossary:
 
 **What is a LLM?**`
@@ -139,7 +101,4 @@ As an AI language model, GPT learns from vast amounts of text data from the inte
 For instance, if a LLM is **only** trained on text and literature written by an author who has a very strong political bias; it is probable that the LLM will reflect that bias in its outputs.
 
 OpenAI, the company behind the GPT LLM used in this project, acknowledges the presence of biases and is actively working to mitigate them. They have made efforts to reduce both glaring and subtle biases in the system and have made ongoing research and development a priority in addressing this issue since it presents potentially harmful or negative outcomes if the models are used widespread.
-
 ---
-
-**For more technical details and a more in-depth user guide, please read [the project wiki](https://git.chalmers.se/courses/dit113/2023/group-17/dialoguegpt/-/wikis/DialogueGPT-Wiki-Page).**
