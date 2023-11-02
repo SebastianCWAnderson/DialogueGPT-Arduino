@@ -27,7 +27,7 @@ Given the advent of generative AI models that have started to blossom during 202
 
 ### Installation:
 
-0. Clone the GitLab repository.
+0. Clone the GitHub repository.
 
 #### A) Set up Mosquitto, the MQTT broker:
 1. Navigate to the installation directory (By default `C:\Program Files\mosquitto` on Windows).
